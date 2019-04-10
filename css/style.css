@@ -1,0 +1,22 @@
+nav.navbar { /* Navbar */
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.11);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.11);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.11);
+}
+
+nav h1.title { /* Brand name in navigation bar */
+}
+
+.navbar-brand img { /* Logo */
+}
+
+a.navbar-item { /* Navbar links */
+}
+
+.content { /* Content between navbar and footer */
+  margin-top: 2em;
+}
+
+footer.footer { /* Footer */
+  margin-top: 2em;
+}

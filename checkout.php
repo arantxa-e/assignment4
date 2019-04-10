@@ -1,12 +1,29 @@
 <?php include('includes/header.php'); ?>
 
-    <div class="columns">
-      <div class="column">
-        <h2>Checkout</h2>
-        <!-- Checkout Here -->
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Checkout
+          </h1>
+          <h2 class="subtitle">
+            You're almost done
+          </h2>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <a class="button is-light">Submit</a>
+  <div class="content container">
+
+    <h2 class="title is-3 has-text-centered">Checkout</h2>
+    <!-- Checkout Here -->
+    <p>
+      Checkout stuff will go here.
+    </p>
+
+
+    <div class="has-text-centered">
+      <a class="button is-primary is-medium" href="#">Submit</a>
+    </div>
 
 <?php include('includes/footer.php'); ?>
