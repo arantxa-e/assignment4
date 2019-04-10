@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include('includes/header.php'); ?>
 
     <div class="columns">
       <div class="column">
@@ -9,4 +9,4 @@
 
     <a class="button is-light">Next</a>
 
-<?php include('footer.php'); ?>
+<?php include('includes/footer.php'); ?>
