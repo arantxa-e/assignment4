@@ -5,6 +5,9 @@ nav.navbar { /* Navbar */
 }
 
 nav h1.title { /* Brand name in navigation bar */
+  margin-top: auto;
+	margin-bottom:auto;
+	padding-left: 20px;
 }
 
 .navbar-brand img { /* Logo */
