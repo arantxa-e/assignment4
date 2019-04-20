@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allerta|Niramit|Satisfy" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+    <!-- Compiled and minified JavaScript -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<title>ajax-upload</title>
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+<div>
+
+  <br />
+  <h6 align="center">Leave us a product!</h6>
+  <br />
+  <div class="panel panel-default">
+  <div class="panel-heading"><b>Upload here</b></div>
+  <div class="panel-body">
+   <form id="uploadImage" action="upload.php" method="post">
+    <div class="form-group">
+     <label>File Upload (jpg or png)</label>
+     <input type="file" name="uploadFile" id="uploadFile" accept=".jpg, .png" />
+    </div>
+    <div class="form-group">
+     <input type="submit" id="uploadSubmit" value="upload" class="btn btn-info" />
+    </div>
+    <div class="progress">
+     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div id="targetLayer" style="display:none;"></div>
+   </form>
+
+
+   <div id="loader-icon" style="display:none;"><img src="img/loader.gif" /></div>
+
+
+  </div>
+  </div>
+  </div>
+
+</body>
+</html>
+
+
+  <script>
+
+$(document).ready(function(){
+ $('#uploadImage').submit(function(event){
+  if($('#uploadFile').val())
+  {
+   event.preventDefault();
+   $('#loader-icon').show();
+   $('#targetLayer').hide();
+   $(this).ajaxSubmit({
+    target: '#targetLayer',
+    beforeSubmit:function(){
+     $('.progress-bar').width('0%');
+    },
+    uploadProgress: function(event, position, total, percentageComplete)
+    {
+     $('.progress-bar').animate({
+      width: percentageComplete + '%'
+     }, {
+      duration: 1000
+     });
+    },
+    success:function(){
+     $('#loader-icon').hide();
+     $('#targetLayer').show();
+    },
+    resetForm: true
+   });
+  }
+  return false;
+ });
+});
+
+
+
+</script>

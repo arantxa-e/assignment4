@@ -1,0 +1,92 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Print My Nonsense</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <!-- placeholder for logo -->
+          <a href="index.php"><img src="img/PMN.png" height="100px" width="80px"></a>
+          <h1 class="title is-4">Print My Nonsense</h1>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="contact.php">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Upload your image
+        </h1>
+        <h2 class="subtitle">
+          What nonsense will you print?
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="content container">
+
+
+    <div class="columns">
+      <div class="column">
+        <h3 class="title is-4 has-text-centered">File Upload</h3>
+
+        <p>
+          Upload your image below.
+        </p>
+		<div class="border">
+        <form action="" method="post" class="has-text-centered">
+          <div class="field">
+            <label class="file-label">
+              <input class="file-input" type="file" name="uploadFile" id="uploadFile" accept=".jpg, .png" />
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">
+                  Choose a file…
+                </span>
+              </span>
+            </label>
+          </div>
+
+          <div class="control">
+            <a class="button" id="uploadSubmit">Upload</a>
+          </div>
+
+          <!-- Animated progress bar. Will need to be visible when image is loading
+          <progress class="progress is-small is-primary" max="100">15%</progress> -->
+
+        </form>
+		</div>
+      </div>
+
+      <div class="column">
+        <h3 class="title is-4 has-text-centered">Your Image</h3>
+      </div>
+    </div>
+
+    <div class="has-text-centered">
+      <a class="button is-medium" href="editor.php">Next</a>
+    </div>
+
+    </div><!-- /container -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Print My Nonsense &copy; 2019        </p>
+      </div>
+    </footer>
+  </body>
+</html>

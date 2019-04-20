@@ -1,0 +1,84 @@
+/* Google Fonts - Poiret One for headers and Poppin for body text */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Poppins:300,600');
+
+nav.navbar { /* Navbar */
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.11);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.11);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.11);
+}
+
+nav h1.title { /* Brand name in navigation bar */
+  margin-top: auto;
+	margin-bottom:auto;
+	padding-left: 20px;
+}
+
+.navbar-brand img { /* Logo */
+
+ background-image: url("img/PMN.png"); 
+}
+
+a.navbar-item { /* Navbar links */
+}
+
+.content { /* Content between navbar and footer */
+  margin-top: 2em;
+}
+
+h1{
+  font-family: 'Poiret One', sans-serif;
+}
+
+nav h1.title {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.1em !important;
+}
+
+h2.title {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5em !important;
+}
+
+h2.subtitle, h3.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.hero {
+	background-color: #ffd200;
+	
+	
+	
+}
+
+.content p, .content a, a.navbar-item {
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+a.button {
+  border-radius: 25px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  background-color: #ffd200;
+}
+
+footer { /* Footer */
+  
+  margin-top: 2em;
+  background-image: url("../img/footer-img.png"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border{
+	border-right: 1px solid black;
+	
+}
