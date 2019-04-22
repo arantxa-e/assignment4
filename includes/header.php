@@ -13,7 +13,7 @@
       <div class="container">
         <div class="navbar-brand">
           <!-- placeholder for logo -->
-          <a href="index.php"><img src="https://via.placeholder.com/100x80.png"></a>
+          <a href="index.php"><img src="img/PMN.png" height="100px" width="80px"></a>
           <h1 class="title is-4">Print My Nonsense</h1>
         </div>
 
